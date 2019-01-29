@@ -1,0 +1,15 @@
+spring:
+  dubbo:
+    server: true
+    registry:
+      protocol: zookeeper
+      address: 127.0.0.1:2181
+  application:
+    name: linshen-dubbo-provider1
+server:
+  port: 9090
+
+
+hello:
+  service:
+    version: 1.0.0

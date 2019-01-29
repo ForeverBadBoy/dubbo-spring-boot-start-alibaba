@@ -1,0 +1,19 @@
+spring:
+  dubbo:
+    server: true
+    id: forever-dubbo-consumer
+    name: forever-consumer
+    port: 20880
+    registry:
+      protocol: zookeeper
+      address: 127.0.0.1:2181
+      id: lin-registry-1
+  application:
+    name: linshen-dubbo-consumer1
+server:
+  port: 9091
+
+# Service version
+hello:
+  service:
+    version: 1.0.0
