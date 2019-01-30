@@ -1,11 +1,13 @@
 spring:
   dubbo:
+    protocol:
+      name: dubbo
     server: true
     registry:
       protocol: zookeeper
-      address: 127.0.0.1:2181
+      address: 127.0.0.1:2181 #zookeeper://127.0.0.1:2181
   application:
-    name: linshen-dubbo-provider1
+    name: dubbo-provider
 server:
   port: 9090
 
